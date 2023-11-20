@@ -1,0 +1,27 @@
+필요한 라이브러리 정리한 파일입니다.
+--------------------------------------------
+<datetime>
+
+from datetime import datetime, timedelta
+
+> pip install datetime
+
+-------------------------------------------
+<wordcloud 관련>
+
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+from konlpy.tag import Okt
+from nltk import FreqDist
+
+> pip install konlpy
+> pip install nltk
+> pip install matplotlib
+> pip install wordcloud
+
+------------------------------------------
+
+데이터 파일은 project_data1.xlsx, project_data2.xlsx, project_data3.xlsx 가 있습니다.
+'데이터 파일 생성.ipynb'에서 11월 1일부터 11월 10일까지의 데이터를 크롤링해서 넣었고, 이후 날짜의 데이터는 streamlit 파일을 만들어서 실행시키고, 그때 크롤링해서 저장하는 방식으로 제출 마감날(11/19)까지 추가 데이터를 담았습니다.
+
+미리 크롤링이 필요한 부분은 'for_wordcloud.ipynb' 코드를 실행해서 저장한 데이터(2023.11.11_2023.11.18_AItitle.xlsx)입니다. 이 파일의 데이터는 워드클라우드를 만들 때 사용됩니다.
